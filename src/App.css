@@ -1,0 +1,90 @@
+#wrapper{
+    margin:0 auto;
+    max-width: 300px;
+}
+
+#boxWrapper {
+    line-height: 0;
+    margin: 0 auto;
+    min-width: 200px;
+}
+
+.defaultWidth{
+  max-width: 200px;
+}
+
+.boxStyling {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+#showPatButton, .hardcoreToggle{
+  float:right;
+}
+#resetHighScore{
+  font-size: .75em;
+  cursor: pointer;
+  padding: 3px;
+  margin:2px;
+}
+#resetHighScore:hover{
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+audio {
+  position: absolute;
+}
+
+.medium {
+  position: relative;
+  -webkit-animation-name: mediumDif; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: mediumDif;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.hard {
+  position: relative;
+  -webkit-animation-name: hardDif; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: hardDif;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mediumDif {
+  0%   {transform: rotate(0deg)}
+  100% {transform: rotate(360deg)}
+}
+
+/* Standard syntax */
+@keyframes mediumDif {
+  0%   {transform: rotate(0deg)}
+  100% {transform: rotate(360deg)}
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hardDif {
+  0%   {left:0px;transform: rotate(0deg)}
+/*  25%  {left:0px;}*/
+  50%  {left:50px;}
+/*  75%  {left:0px;}*/
+  100% {left:0px;transform: rotate(360deg)}
+}
+
+/* Standard syntax */
+@keyframes hardDif {
+  0%   {left:0px;transform: rotate(0deg)}
+/*  25%  {left:0px;}*/
+  50%  {left:50px;}
+/*  75%  {left:0px;}*/
+  100% {left:0px;transform: rotate(360deg)}
+}
