@@ -2,7 +2,6 @@
   "name": "simon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Greg-tts/simonUnleashed",
   "dependencies": {
     "@material-ui/core": "^4.4.0",
     "@material-ui/icons": "^4.2.1",
